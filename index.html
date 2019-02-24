@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Vacancies</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+      <div class="sidebar-header">
+        <h3>HR APP</h3>
+      </div>
+      <ul>
+        <li>
+          <a href="#">Interview</a>
+        </li>
+        <li class="active">
+          <a href="#">Vacancies</a>
+        </li>
+        <li>
+          <a href="#">Candidates</a>
+        </li>
+        <li>
+          <a href="#">Management</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="main-search">
+        <button><i class="material-icons">search</i></button>
+        <input type="text" placeholder="Some text">
+        <button><i class="material-icons">notifications</i></button>
+        <button><i class="material-icons">input</i></button>
+      </div>
+      <h4>Vacancies</h4>
+      <div class="filter">
+        <label for="filter-select">Filter by</label>
+        <select name="filter" id="filter-select">
+          <option value="" hidden selected disabled></option>
+          <option value="language">language</option>
+          <option value="experience">experience</option>
+          <option value="salary">salary</option>
+        </select>
+        <input type="search" class="input-search">
+        <input type="search" class="input-search">
+      </div>
+      <div class="list">
+        <div class="table-header">
+          <div>Vacancy Name</div>
+          <div>Vacancy Experience</div>
+          <div>Vacancy Salary</div>
+          <div>Options</div>
+        </div>
+        <ul>
+          <li>
+            <div>Java Developer</div>
+            <div>Trainee</div>
+            <div>Free</div>
+            <div>View Candidates</div></li>
+          <li>
+            <div>Java Developer</div>
+            <div>Junior</div>
+            <div>500</div>
+            <div>View Candidates</div></li>
+          <li>
+            <div>Java Developer</div>
+            <div>Junior</div>
+            <div>500</div>
+            <div>View Candidates</div></li>
+          <li>
+            <div>Java Developer</div>
+            <div>Middle</div>
+            <div>1500</div>
+            <div>View Candidates</div></li>
+          <li>
+            <div>Java Developer</div>
+            <div>Middle</div>
+            <div>1500</div>
+            <div>View Candidates</div></li>
+          <li>
+            <div>Java Developer</div>
+            <div>Senior</div>
+            <div>3000</div>
+            <div>View Candidates</div></li>
+        </ul>
+        <div class="footer">
+          <label for="pagination">Rows per page:</label>
+          <select name="number" id="pagination">
+            <option value="10">10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+          <p>1-10 of 100</p>
+          <button><i class="material-icons">keyboard_arrow_left</i></button>
+          <button><i class="material-icons">keyboard_arrow_right</i></button>
+        </div>
+      </div>
+    </div>
+    <button class="add-button">+</button>
+  </div>
+</body>
+</html>
